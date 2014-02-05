@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="term">
+			<action name="Execute">
+				<command>terminator</command>
+			</action>
+		</item>
+		<item label="subl">
+			<action name="Execute">
+				<command>subl</command>
+			</action>
+		</item>
+		<item label="chrome">
+			<action name="Execute">
+				<command>google-chrome --embed-flash-fullscreen</command>
+			</action>
+		</item>
+		<item label="thunar">
+			<action name="Execute">
+				<command>thunar</command>
+			</action>
+		</item>
+		<item label="keep">
+			<action name="Execute">
+				<command>google-chrome --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki --profile-directory=Default --user-data-dir=/home/pth/.config/google-chrome-beta</command>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-8584" label="programs">
+			<menu id="root-menu-322817" label="dev">
+				<item label="Filezilla">
+					<action name="Execute">
+						<command>filezilla</command>
+					</action>
+				</item>
+				<item label="Eclipse">
+					<action name="Execute">
+						<command>eclipse</command>
+					</action>
+				</item>
+				<item label="PureData">
+					<action name="Execute">
+						<command>pd-extended</command>
+					</action>
+				</item>
+				<item label="iPython notebook">
+					<action name="Execute">
+						<command>terminator -e ipython notebook</command>
+					</action>
+				</item>
+			</menu>
+			<menu id="multimedia" label="media">
+				<item label="spotify">
+					<action name="Execute">
+						<command>google-chrome --app=https://play.spotify.com</command>
+					</action>
+				</item>
+				<item label="steam">
+					<action name="Execute">
+						<command>steam</command>
+					</action>
+				</item>
+				<item label="clementine">
+					<action name="Execute">
+						<command>clementine</command>
+					</action>
+				</item>
+				<item label="vlc">
+					<action name="Execute">
+						<command>vlc</command>
+					</action>
+				</item>
+			</menu>
+			<menu id="utils" label="utils">
+				<item label="Keyboard On">
+					<action name="Execute">
+						<command>kbtoggle.sh -l</command>
+					</action>
+				</item>
+				<item label="Shutter">
+					<action name="Execute">
+						<command>shutter</command>
+					</action>
+				</item>
+				<item label="Catfish File Search">
+					<action name="Execute">
+						<command>
+							catfish
+						</command>
+					</action>
+				</item>
+				<item label="Task Manager (htop)">
+					<action name="Execute">
+						<command>terminator --command=&quot;htop&quot;</command>
+					</action>
+				</item>
+				<item label="Volume Control">
+					<action name="Execute">
+						<command>
+							pavucontrol
+						</command>
+					</action>
+				</item>
+				<item label="Pidgin">
+					<action name="Execute">
+						<command>pidgin</command>
+					</action>
+				</item>
+				<item label="Transmission">
+					<action name="Execute">
+						<command>
+							transmission-gtk
+						</command>
+					</action>
+				</item>
+			</menu>
+		</menu>
+		<menu id="settings" label="config">
+
+			<menu id="DisplaySettings" label="Display Settings">
+				<item label="Nitrogen">
+					<action name="Execute">
+						<command>
+							nitrogen ~/images/wallpapers/
+						</command>
+					</action>
+				</item>
+				<item label="ARandR">
+					<action name="Execute">
+						<command>arandr --force-version</command>
+					</action>
+				</item>
+				<item label="UI Settings">
+					<action name="Execute">
+						<command>
+							lxappearance
+						</command>
+					</action>
+				</item>
+				<separator/>
+				<item label="Conky:: Restart">
+					<action name="Execute">
+						<command>
+							conkywonky
+						</command>
+					</action>
+				</item>
+				<item label="tint2:: Restart">
+					<action name="Execute">
+						<command>
+							tint2restart
+						</command>
+					</action>
+				</item>
+
+				<separator/>
+				<item label="OB:: GUI Menu Editor">
+					<action name="Execute">
+						<command>
+							obmenu
+						</command>
+					</action>
+				</item>
+				<item label="OB:: GUI Applications Settings Editor">
+					<action name="Execute">
+						<command>
+							obapps
+						</command>
+					</action>
+				</item>
+				<item label="OB:: GUI Config Tool">
+					<action name="Execute">
+						<command>
+							obconf
+						</command>
+					</action>
+				</item>
+				<item label="OB:: Reconfigure">
+					<action name="Reconfigure"/>
+				</item>
+				<item label="OB:: Restart">
+					<action name="Restart"/>
+				</item>
+				<separator/>
+			</menu>
+			<item label="Edit Default Applications">
+				<action name="Execute">
+					<command>
+						terminator --command=&quot;sudo update-alternatives --all&quot;
+					</command>
+				</action>
+			</item>
+			<item label="Power Management">
+				<action name="Execute">
+					<command>
+						xfce4-power-manager-settings
+					</command>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<item label="Exit">
+			<action name="Execute">
+				<command>
+					cb-exit
+				</command>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
