@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="term">
 			<action name="Execute">
-				<command>terminator</command>
+				<command>terminator -b --geometry=630x360 -x tmux</command>
 			</action>
 		</item>
 		<item label="subl">
@@ -117,7 +117,6 @@
 			</menu>
 		</menu>
 		<menu id="settings" label="config">
-
 			<menu id="DisplaySettings" label="Display Settings">
 				<item label="Nitrogen">
 					<action name="Execute">
@@ -153,7 +152,6 @@
 						</command>
 					</action>
 				</item>
-
 				<separator/>
 				<item label="OB:: GUI Menu Editor">
 					<action name="Execute">
