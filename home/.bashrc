@@ -110,19 +110,19 @@ function get_git_status() {
 
   # Iterate through all the cases and if it matches, then echo
   if [[ $dirty_branch == 1 && $branch_ahead == 1 && $branch_behind == 1 ]]; then
-    echo "⬢"
+    echo " ⬢"
   elif [[ $dirty_branch == 1 && $branch_ahead == 1 ]]; then
-    echo "▲"
+    echo " ▲"
   elif [[ $dirty_branch == 1 && $branch_behind == 1 ]]; then
-    echo "▼"
+    echo " ▼"
   elif [[ $branch_ahead == 1 && $branch_behind == 1 ]]; then
-    echo "⬡"
+    echo " ⬡"
   elif [[ $branch_ahead == 1 ]]; then
-    echo "△"
+    echo " △"
   elif [[ $branch_behind == 1 ]]; then
-    echo "▽"
+    echo " ▽"
   elif [[ $dirty_branch == 1 ]]; then
-    echo "*"
+    echo " *"
   fi
 }
 
@@ -136,7 +136,7 @@ get_git_info () {
     output="$branch"
 
     # Add on the git status
-    output=$output" $(get_git_status)"
+    output=$output"$(get_git_status)"
 
     # Echo our output
     echo "$output"
