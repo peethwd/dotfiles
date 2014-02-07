@@ -145,7 +145,7 @@ get_git_info () {
 
 ##########
 set_prompt() {
-    export PS1="\[\e[1;31m\]#! \[\e[0;31m\][\h] \[\e[0;36m\]\w \$( is_on_git && echo -n \"\[\e[0;35m\]\$(get_git_info)\" && echo -n \"\[\e[0;31m\]\") \[\e[1;32m\]>>\[\e[0m\] \n"
+    export PS1="\[\e[1;31m\]#! \[\e[0;36m\]\w \$( is_on_git && echo -n \"\[\e[0;35m\]\$(get_git_info)\" && echo -n \"\[\e[0;31m\]\") \[\e[1;32m\]>>\[\e[0m\] \n"
 }
 PROMPT_COMMAND=set_prompt
 
