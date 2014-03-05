@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="term">
 			<action name="Execute">
-				<command>terminator -b --geometry=630x360 -x tmux</command>
+				<command>terminator --geometry=630x360 -x tmux</command>
 			</action>
 		</item>
 		<item label="subl">
