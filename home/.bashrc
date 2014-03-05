@@ -164,8 +164,9 @@ fi
 
 [[ -f "/home/pth/.local/share/Steam/setup_debian_environment.sh" ]] && source "/home/pth/.local/share/Steam/setup_debian_environment.sh"
 
-PATH="$HOME/bin:$PATH"
-export PYTHONPATH=$PATH:/home/pth/cloned-repos/GPy
+export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-5.5/bin:$PATH"
+export PYTHONPATH=$PATH:/home/pth/code/python/libs/GPy
 export CLASSPATH=.:/usr/share/java/*:/home/pth/bin/java/junit-4.11.jar:/home/pth/bin/java/hamcrest-core-1.3.jar
+export LD_LIBRARY_PATH="/usr/local/cuda-5.5/lib64:/lib"
 
 source ~/.homesick/repos/homeshick/homeshick.sh
