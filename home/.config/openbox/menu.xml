@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="term">
 			<action name="Execute">
-				<command>terminator --geometry=630x360 -x tmux</command>
+				<command>xfce4-terminal --geometry=80x23 -x tmux</command>
 			</action>
 		</item>
 		<item label="subl">
@@ -46,7 +46,7 @@
 				</item>
 				<item label="iPython notebook">
 					<action name="Execute">
-						<command>terminator -e ipython notebook</command>
+						<command>xfce4-terminal -e ipython notebook</command>
 					</action>
 				</item>
 			</menu>
@@ -92,7 +92,7 @@
 				</item>
 				<item label="Task Manager (htop)">
 					<action name="Execute">
-						<command>terminator --command=&quot;htop&quot;</command>
+						<command>xfce4-terminal --command=&quot;htop&quot;</command>
 					</action>
 				</item>
 				<item label="Volume Control">
@@ -185,7 +185,7 @@
 			<item label="Edit Default Applications">
 				<action name="Execute">
 					<command>
-						terminator --command=&quot;sudo update-alternatives --all&quot;
+						xfce4-terminal --command=&quot;sudo update-alternatives --all&quot;
 					</command>
 				</action>
 			</item>
