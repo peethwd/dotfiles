@@ -51,11 +51,6 @@
 				</item>
 			</menu>
 			<menu id="multimedia" label="media">
-				<item label="spotify">
-					<action name="Execute">
-						<command>google-chrome --app=https://play.spotify.com</command>
-					</action>
-				</item>
 				<item label="steam">
 					<action name="Execute">
 						<command>steam</command>
@@ -66,9 +61,24 @@
 						<command>clementine</command>
 					</action>
 				</item>
+				<item label="spotify">
+					<action name="Execute">
+						<command>google-chrome --app=https://play.spotify.com</command>
+					</action>
+				</item>
 				<item label="vlc">
 					<action name="Execute">
 						<command>vlc</command>
+					</action>
+				</item>
+				<item label="gimp">
+					<action name="Execute">
+						<command>gimp</command>
+					</action>
+				</item>
+				<item label="inkscape">
+					<action name="Execute">
+						<command>inkscape</command>
 					</action>
 				</item>
 			</menu>
