@@ -18,3 +18,4 @@
     br = branch 
     diff = diff --word-diff
     dc = diff --cached
+    uc = reset --soft 'HEAD^'
