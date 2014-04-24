@@ -19,3 +19,5 @@
     diff = diff --word-diff
     dc = diff --cached
     uc = reset --soft 'HEAD^'
+    sl = shortlog -s -n
+    sle = shortlog -s -n -e
