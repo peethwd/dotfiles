@@ -12,3 +12,5 @@ alias grep='grep --color'
 
 alias please='sudo'
 alias g=git
+
+alias todo='grep --color -rn "@todo"'
