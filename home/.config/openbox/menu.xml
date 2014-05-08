@@ -51,6 +51,11 @@
 				</item>
 			</menu>
 			<menu id="multimedia" label="media">
+				<item label="firefox">
+					<action name="Execute">
+						<command>firefox</command>
+					</action>
+				</item>
 				<item label="steam">
 					<action name="Execute">
 						<command>steam</command>
@@ -115,6 +120,11 @@
 				<item label="Pidgin">
 					<action name="Execute">
 						<command>pidgin</command>
+					</action>
+				</item>
+				<item label="Mumble">
+					<action name="Execute">
+						<command>mumble</command>
 					</action>
 				</item>
 				<item label="Transmission">

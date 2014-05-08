@@ -21,3 +21,4 @@
     uc = reset --soft 'HEAD^'
     sl = shortlog -s -n
     sle = shortlog -s -n -e
+    mg = merge --no-ff
