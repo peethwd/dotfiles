@@ -153,6 +153,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
 # enable programmable completion features (you don't need to enable
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
