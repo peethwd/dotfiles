@@ -1,5 +1,4 @@
-alias junit="java org.junit.runner.JUnitCore"
-alias ipydwin="ipython notebook --profile=darwin"
+alias junit='java org.junit.runner.JUnitCore'
 
 alias ls='ls --color=auto'
 alias sl='ls --color=auto'
@@ -10,7 +9,10 @@ alias cl='clear && ls'
 alias grep='grep --color'
 
 alias please='sudo'
-alias g=git
+alias g='git'
 
 alias todo='grep --color -rn "@todo"'
 alias kill='kill -9'
+
+alias targz='tar -zcvf'
+alias utargz='tar -zxvf'
