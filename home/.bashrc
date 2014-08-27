@@ -33,9 +33,9 @@ fi
 
 [[ -f "/home/pth/.local/share/Steam/setup_debian_environment.sh" ]] && source "/home/pth/.local/share/Steam/setup_debian_environment.sh"
 
-export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-6.0/bin:$PATH"
+export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-6.5/bin:$PATH"
 export PYTHONPATH=$PATH:/home/pth/code/python/libs/GPy
 export CLASSPATH=.:/usr/share/java/*:/home/pth/bin/java/junit-4.11.jar:/home/pth/bin/java/hamcrest-core-1.3.jar
-export LD_LIBRARY_PATH="/usr/local/cuda-6.0/lib64:/lib"
+export LD_LIBRARY_PATH="/usr/local/cuda-6.5/lib64:/lib"
 
 source ~/.homesick/repos/homeshick/homeshick.sh
