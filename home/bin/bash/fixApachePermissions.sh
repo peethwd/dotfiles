@@ -5,5 +5,5 @@
  
 
 sudo adduser $USER www-data
-sudo chown -R www-data:www-data /home/$USER/code/php
+sudo chown -R $USER:www-data /home/$USER/code/php
 sudo chmod -R 775 /home/$USER/code/php
