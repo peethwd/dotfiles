@@ -22,6 +22,10 @@ if [ -f ~/.bash_functions ]; then
     . ~/.bash_functions
 fi
 
+if [ -f ~/.bash_environment ]; then
+    . ~/.bash_environment
+fi
+
 # enable programmable completion features (you don't need to enable
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
@@ -30,12 +34,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-[[ -f "/home/pth/.local/share/Steam/setup_debian_environment.sh" ]] && source "/home/pth/.local/share/Steam/setup_debian_environment.sh"
-
-export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-6.5/bin:$PATH"
-export PYTHONPATH=$PATH:/home/pth/code/python/libs/GPy
-export CLASSPATH=.:/usr/share/java/*:/home/pth/bin/java/junit-4.11.jar:/home/pth/bin/java/hamcrest-core-1.3.jar
-export LD_LIBRARY_PATH="/usr/local/cuda-6.5/lib64:/lib"
 
 source ~/.homesick/repos/homeshick/homeshick.sh
