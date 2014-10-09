@@ -36,3 +36,5 @@ if ! shopt -oq posix; then
 fi
 
 source ~/.homesick/repos/homeshick/homeshick.sh
+source ~/.rvm/scripts/rvm
+
