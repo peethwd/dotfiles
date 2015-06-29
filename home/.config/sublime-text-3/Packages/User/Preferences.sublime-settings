@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "system",
 	"detect_slow_plugins": false,
 	"dictionary": "Packages/Language - English/en_GB.dic",
@@ -19,7 +19,7 @@
 		"__pycache__"
 	],
 	"font_face": "Source Code Pro",
-	"font_size": 9,
+	"font_size": 10,
 	"gutter": true,
 	"highlight_line": true,
 	"ignored_packages":
