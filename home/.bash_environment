@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-6.5/bin:$HOME/bin/java/jogl2/lib:$HOME/.rvm/bin:$PATH"
+export PATH="$HOME/bin:$HOME/bin/bash:/usr/local/cuda-7.0/bin:$HOME/bin/java/jogl2/lib:$HOME/.rvm/bin:$PATH"
 export PYTHONPATH="$PATH:$HOME/code/python/libs/GPy"
 export CLASSPATH=".:/usr/share/java/*:$HOME/bin/java/junit-4.11.jar:$HOME/bin/java/hamcrest-core-1.3.jar:$HOME/bin/java/jogl2/jar/*"
-export LD_LIBRARY_PATH="/usr/local/cuda-6.5/lib64:/lib"
+export LD_LIBRARY_PATH="/usr/local/cuda-7.0/lib64:/lib"

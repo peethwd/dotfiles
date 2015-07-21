@@ -16,3 +16,5 @@ alias kill='kill -9'
 
 alias targz='tar -zcvf'
 alias utargz='tar -zxvf'
+
+alias spotifyweb='chromeApp "https://play.spotify.com/radio"'
