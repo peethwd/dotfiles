@@ -35,9 +35,26 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Activate Lmod if installed
+if [ -f /usr/share/lmod/lmod/init/bash ]; then 
+  source /usr/share/lmod/lmod/init/bash 
+  # Set module file dir if it exists
+  if [ -d $HOME/modulefiles ]; then 
+    module use $HOME/modulefiles
+    # Load some modules if relevant
+    if [ -d $HOME/modulefiles/libs/CUDA/10.1 ]; then 
+      module load libs/CUDA/10.1
+    fi
+    if [ -d $HOME/modulefiles/dev/cmake ]; then 
+      module load dev/cmake
+    fi
+  fi 
+fi
+
 if [ -f ~/.homesick/repos/homeshick/homeshick.sh ]; then
   source ~/.homesick/repos/homeshick/homeshick.sh
 fi
+
 if [ -f ~/.rvm/scripts/rvm ]; then
   source ~/.rvm/scripts/rvm
 fi
